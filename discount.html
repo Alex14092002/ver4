@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://fonts.cdnfonts.com/css/sf-pro-display"
+    rel="stylesheet"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+ <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <title>Document</title>
+</head>
+<body onload="addOverlay()">
+    <div class="containers">
+        <div class="main row">
+            <div  class="left col-12 col-md-6">
+              <div class="containerss">
+                <div class="mySlides">
+                  
+                  <img src="./img/image 128.png" style="height:633px ; width: 100%" >
+                </div>
+              
+                <div class="mySlides">
+                  
+                  <iframe width="100%" height="633px" src="https://www.youtube.com/embed/0fYi8SGA20k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+              
+                <div class="mySlides">
+                 
+                  <img src="./img/image 131.png" style="height:633px ; width:100%">
+                </div>
+                  
+                <div class="mySlides">
+                 
+                  <img src="./img/image 132.png" style="height:633px ; width:100%">
+                </div>
+              
+                <div class="mySlides">
+                
+                  <img src="./img/image 133.png" style="height:633px ; width:100%">
+                </div>
+                  
+                <div class="mySlides">
+                  
+                  <img src="./img/image 128.png" style="height:633px ;width:100%">
+                </div>
+                
+              
+              
+              
+                <div class="rows ">
+                  <div class="column  " onclick="currentSlide(1)">
+                    <img class="demo cursor " src="./img/image 128.png" style="width:100%"  alt="The Woods">
+                    <div class=" overlay-black overlay " ></div>
+                  </div>
+                  <div class="column tt " onclick="currentSlide(2)">
+                        <img src="./img/play-button 1.png"  alt="" class="play">
+                        <img class="demo cursor" src="./img/image 129.png" style="width:100%"  alt="Cinque Terre">
+                        <div class="overlay-black" ></div>
+                  </div>
+                  <div class="column " onclick="currentSlide(3)">
+                    <img class="demo cursor" src="./img/image 131.png" style="width:100%"  alt="Mountains and fjords">
+                    <div class=" overlay-black" ></div>
+                  </div>
+                  <div class="column " onclick="currentSlide(4)">
+                    <img class="demo cursor" src="./img/image 132.png" style="width:100%"  alt="Northern Lights">
+                    <div class=" overlay-black" ></div>
+                  </div>
+                  <div class="column "  onclick="currentSlide(5)" >
+                    <img class="demo cursor" src="./img/image 133.png" style="width:100%" alt="Nature and sunrise">
+                    <div class=" overlay-black" ></div>
+                  </div>    
+                  <div class="column " onclick="currentSlide(6)">
+                    <img class="demo cursor" src="./img/image 128.png" style="width:100%"  alt="Snowy Mountains">
+                    <div class=" overlay-black" ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right col-12 col-md-6">
+              <div class="header-title">
+                <h5>L'OREAL <i class="fa fa-angle-right" aria-hidden="true"></i></h5>
+                <img src="./img/heart 1.png" alt="">
+              </div>
+              <div class="name-product z">
+                <h1>Nước Tẩy Trang Làm Sạch Sâu 3 In 1 L'Oreal Micellar Water <br> Deep Cleansing</h1>
+              </div>
+              <div class="starts z">
+                <div class="item-start">
+                  <img src="./img/Star 1.png" alt="">
+                  <img src="./img/Star 1.png" alt="">
+                  <img src="./img/Star 1.png" alt="">
+                  <img src="./img/Star 1.png" alt="">
+                  <img src="./img/Star 5.png" alt="">
+                  <h5>4 đánh giá</h5>
+                </div>
+                <div class="item-start">
+                 <img src="./img/shopping-cart 14.png" alt="">
+                  <h5>1.145 đã bán</h5>
+                </div>
+                <div class="item-start none">
+               <img src="./img/barcode 1.png" alt="">
+                  <h5>800344</h5>
+                </div>
+              </div>
+              <div class="box-free z">
+                <h5 class="blue">FREESHIP HCM</h5>
+                <h5 class="origin" >BEST</h5>
+              </div>
+              <div class="box-hot-deal z">
+                <div class="img-flash">
+                    <div class="img-item-flash">
+                        <img src="./img/thunder 1.png" alt="">
+                    </div>
+                    <div class="text-flash">
+                        <h5>HOT DEAL ĐANG DIỄN RA</h5>
+                    </div>
+                    
+                </div>
+
+                <div class="timer-count">
+                    <h5>Kết thúc trong</h5>
+                    <div id="countdown">
+                        
+                        <div id="hours">00</div>
+                        <div id="minutes">00</div>
+                        <div id="seconds">00</div>
+                      </div>
+                </div>
+              </div>
+              <div class="price z">
+                <div class="item-price">
+                  <h1> 339.000 đ </h1>
+                </div>
+                <div class="item-price second second2">
+                  <h3>400.000 đ</h3>
+                </div>
+                <div class="item-price second second3">
+                  <h5>-15%</h5>
+                </div>
+                
+              </div>
+              <div class="giamgia z">
+                <h5>(Tiết Kiệm: <b>61.000đ</b> )</h5>
+              </div>
+
+              <div class="gift-cottoc z">
+                <h5>Tặng băng đô cột tóc bất kỳ khi mua hoá đơn từ 599k (Số lượng có hạn)</h5>
+              </div>
+
+
+              <div class="box-select z">
+                <div class="name-select zz">
+                    <div class="img-gift">
+                        <img src="./img/gift 1.png" alt="">
+                    </div>
+                    <div class="text-gift">
+                        <h5>Quà tặng: Bông Tẩy Trang Ya Samaya (hết quà trừ 15k)</h5>
+                    </div>
+                </div>
+                <div class="select-gift">
+                    <input type="radio" checked id="gift1" name="select-gift" value="gift1">
+                    <label for="gift1">
+                        <div class="name-item-gift">
+                            <div class="img-gift">
+                                <img src="./img/image 139.png" alt="">
+                            </div>
+                            <div class="item-name-gift">
+                                <h5>Bông Tẩy Trang Ya Samaya Cotton Pads (120 Miếng)</h5> 
+                                <h5 class="price-gift">Giá: <b> 25.000 đ</b></h5>
+                            </div>
+                        </div>
+                    </label><br>
+                    <input type="radio" id="gift2" name="select-gift" value="gift2">
+                    <label for="gift2">
+    <div class="name-item-gift">
+        <div class="img-gift">
+            <img src="./img/image 138.png" alt="">
+        </div>
+        <div class="item-name-gift">
+            <h5>Tăm Bông Jomi Kháng Khuẩn Dành Cho Người Lớn (Hộp 200 cái)</h5> 
+            <h5 class="price-gift">Giá: <b>25.000 đ</b> </h5>
+        </div>
+    </div>
+                    </label><br>
+                </div>
+              </div>
+
+              <div class="text-dungtich z">
+                <h5>Dung tích: </h5>
+              </div>
+              <div class="main-dungtich z">
+                <div class="box-dungtich activess">
+                  <div class="img-log">
+                    <img src="./img/image 135.png" alt="" width="15px" height="28px" >
+                  </div>
+                  <h5>400ML</h5>
+                </div>
+                <div class="box-dungtich box-second">
+                  <div class="img-log">
+                    <img src="./img/image 135.png" alt="" width="15px" height="28px" >
+                  </div>
+                  <h5>95ML</h5>
+                </div>
+              </div>
+              <div class="soluong z">
+                <h5>Số lượng: </h5>
+              </div>
+              <div class="btn-soluong z">
+                <button onclick="handleMinus()">-</button>
+                <input type="text" id="amount" value="1">
+                <button onclick="handlePlus()" >+</button>
+              </div>
+              <div class="btn-main z">
+                <div class="item-btn">
+                  <button class="btn-cart"><img src="./img/shopping-cart 19.svg" alt="">THÊM VÀO GIỎ HÀNG</button>
+                </div>
+                <div class="item-btn">
+                  <button class="btn-cart black"><img src="./img/Black.svg" alt="">MUA NGAY</button>
+                </div>
+                <div class="item-btn">
+                  <button class="btn-cart location"><img src="./img/location-pin 1.svg" alt="">Chi nhánh cửa hàng</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <script src="./read-more.js"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+          integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer">
+  </script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./slider.js"></script>
+  <script src="./active.js"></script>
+  <script src="./timer-count.js"></script>
+  <script src="./number.js"></script>
+  <script src="./activedungtich.js"></script>
+  <script src="./overplay.js"></script>
+ 
+</body>
+</html>
